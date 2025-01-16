@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{%block title%}Welcome Page{% endblock %}
+
+
+{%block content%}
+    <h1> Welcome to the Meeting Planner</h1>
+    <p>
+        This is a meeting planner application by <em>Coding Ninja</em>
+    </p>
+
+
+    <ul>
+        <h2>Meeting Schedule</h2>
+        {% for item in meeting %}
+            <li>
+                <a href="{% url 'detail' item.id %}">
+                    {{item.title}}
+                </a>
+            </li>
+        {%endfor%}
+
+        <h2>Room Details</h2>
+        {% for item in room %}
+            <li>
+                <a href="{% url 'room_detail' item.id %}">
+                    {{item.room_name}}
+                </a>
+            </li>
+        {%endfor%}
+    </ul>
+{%endblock%}
