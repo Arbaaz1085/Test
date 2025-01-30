@@ -1,3 +1,2 @@
-def my_fun():
-    print('Hello from my_fun')
-    print('Hello from my_fun')
+def new_fun(a,b):
+    return a+b
