@@ -1,2 +1,2 @@
-def new_fun(a,b):
-    return a+b
+def my_fun():
+    return "Hello from my_fun in app.py"
