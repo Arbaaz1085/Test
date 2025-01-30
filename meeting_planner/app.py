@@ -1,2 +1,2 @@
 def my_function():
-    return "Hello, World!"
+    return "Hello, World is great!"
